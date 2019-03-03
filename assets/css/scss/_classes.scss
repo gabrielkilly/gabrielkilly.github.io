@@ -1,0 +1,35 @@
+.links {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin-top: 20px;
+  a {
+    width: 3em;
+    height: 3em;
+    padding: 0 .7em;
+    background-color: white;
+    transition: 0.6s background;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    &.linkedin {
+      background-image: url(/assets/images/linkedin-logo.png);
+      &:hover {
+        background-image: url(/assets/images/linkedin-logo-alt.png);
+      }
+    }
+    &.github {
+      background-image: url(/assets/images/github-logo.png);
+      &:hover {
+        background-image: url(/assets/images/github-logo-alt.png);
+      }
+    }
+    &.instagram {
+      background-image: url(/assets/images/instagram-logo.png);
+      &:hover {
+        background-image: url(/assets/images/instagram-logo-alt.png);
+      }
+    }
+  }
+}

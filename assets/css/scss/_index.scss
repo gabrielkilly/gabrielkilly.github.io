@@ -1,0 +1,39 @@
+body#index {
+  >div {
+    > * {
+      margin: 20px 0;
+      &.links {
+        margin: 50px 0;
+      }
+    }
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Khand';
+    height: 100vh;
+    justify-content: center;
+    h1 {
+      display: block;
+      font-size: 5.3em;
+      font-weight: 300;
+      text-align: center;
+      .bold {
+        font-weight: 500;
+      }
+    }
+    >nav {
+      display: flex;
+      >a {
+        background-color: rgba(#EBEBEB, 0.6);
+        font-weight: 400;
+        font-size: 2.5rem;
+        color: black;
+        display: block;
+        padding: 10px 90px;
+        border-radius: 6px;
+        margin: 0 20px;
+        text-decoration: none
+      }
+    }
+  }
+}
