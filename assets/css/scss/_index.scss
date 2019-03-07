@@ -1,40 +1,68 @@
 body#index {
   overflow: hidden;
+  font-family: 'Khand';
   >div {
     > * {
-      margin: 20px 0;
+      margin: 30px 0;
       &.links {
-        margin: 50px 0;
+        margin: 70px 0;
       }
     }
     align-items: center;
     display: flex;
     flex-direction: column;
-    font-family: 'Khand';
-    height: 100vh;
-    justify-content: center;
-    h1 {
-      display: block;
-      font-size: 5.3em;
-      font-weight: 300;
-      text-align: center;
-      .bold {
-        font-weight: 500;
+    height: 80vh;
+    justify-content: space-around;
+    >div {
+      img {
+        height: 3vh;
+        width: auto;
+      }
+      h1 {
+        display: block;
+        font-size: 8.5vh;
+        font-weight: 300;
+        text-align: center;
+        .bold {
+          font-weight: 500;
+        }
+      }
+      .sub-header {
+        display: flex;
+        margin-top: 3vh;
+        li {
+          font-weight: 300;
+          font-size: 3.5vh;
+        }
+        img {
+          height: 26px;
+          width: auto;
+          margin: 0 20px;
+        }
       }
     }
     >nav {
       display: flex;
       >a {
-        background-color: rgba(#EBEBEB, 0.6);
-        font-weight: 400;
-        font-size: 2.5rem;
+        background-color: rgba(#F9D495, 0.6);
+        font-weight: 500;
+        font-size: 4vh;
         color: black;
         display: block;
-        padding: 10px 90px;
+        padding: 20px 90px;
         border-radius: 6px;
-        margin: 0 20px;
-        text-decoration: none
+        margin: 0 4vh;
+        text-decoration: none;
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
       }
     }
+  }
+  footer {
+    position: absolute;
+    bottom: -0;
+    height: 13vh;
+    background: url(/assets/images/background.png) repeat;
+    width: 100%;
   }
 }
