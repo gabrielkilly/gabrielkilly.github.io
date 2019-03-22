@@ -13,10 +13,17 @@ body#index {
     flex-direction: column;
     height: 80vh;
     justify-content: space-around;
+    >img{
+      height: 10vh;
+      width: auto;
+    }
     >div {
       img {
         height: 3vh;
         width: auto;
+        @media screen and (max-width: 550px) {
+          height: 5vh;
+        }
       }
       h1 {
         display: block;
@@ -30,19 +37,31 @@ body#index {
       .sub-header {
         display: flex;
         margin-top: 3vh;
+        @media screen and (max-width: 550px) {
+          flex-direction: column;
+          align-items: center;
+        }
         li {
           font-weight: 300;
           font-size: 3.5vh;
+          margin: 10px 0;
         }
         img {
-          height: 26px;
-          width: auto;
+          height: 2vh;
+          width: 2vh;
           margin: 0 20px;
+          @media screen and (max-width: 550px) {
+            margin: auto;
+          }
         }
       }
     }
     >nav {
       display: flex;
+      text-align: center;
+      @media screen and (max-width: 550px) {
+        flex-direction: column;
+      }
       >a {
         background-color: rgba(#F9D495, 0.6);
         font-weight: 500;
@@ -55,13 +74,22 @@ body#index {
         text-decoration: none;
         box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 6px;
+        transition: .6s background-color, .6s color;
+        margin: 10px;
+        @media screen and (max-width: 550px) {
+          padding: 20px 60px;
+        }
+        &:hover {
+          background-color: rgba(#E88016,1);
+          color: white;
+        }
       }
     }
   }
   footer {
     position: absolute;
     bottom: -0;
-    height: 13vh;
+    height: 9vh;
     background: url(/assets/images/background.png) repeat;
     width: 100%;
   }
