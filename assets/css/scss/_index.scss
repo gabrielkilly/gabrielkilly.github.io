@@ -68,6 +68,7 @@ body#index {
         flex-direction: column;
       }
       >a {
+
         background-color: rgba(#F9D495, 0.6);
         font-weight: 500;
         font-size: 4vh;
@@ -81,6 +82,7 @@ body#index {
         border-radius: 6px;
         transition: .6s background-color, .6s color;
         margin: 10px;
+        cursor: pointer;
         @media screen and (max-width: 550px) {
           padding: 20px 60px;
         }
