@@ -94,20 +94,29 @@ body#index {
     }
     .about-modal {
       position: absolute;
-      height: 70vh;
-      width: 70%;
-      max-width: 600px;
-      max-height: 600px;
+      height: 80vh;
+      width: 80vh;
       display: none;
       background-color: white;
       color: black;
       background: rgba(255, 255, 255, 0.99);
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
       border-radius: 10px;
+      background: url(/assets/images/modal.svg) no-repeat;
+      background-position: center;
+      background-size: contain;
       @media screen and (max-width: 550px) {
         width: 100%;
         height: 100vh;
+        background: url(/assets/images/modal-mobile.svg) no-repeat;
+        background-position: center;
+
       }
+      // > img {
+      //   width: auto;
+      //   height: 80vh;
+      //   background-image: url("assets/images/modal.svg");
+      // }
     }
     .modal-helper {
       position: absolute;
