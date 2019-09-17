@@ -6,11 +6,11 @@
   <link href="/assets/css/styles.min.css" rel="stylesheet" />
   <link rel="icon" href="/assets/images/icon.png">
   <script src="/libraries/jquery-3.3.1.min.js"></script>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">.
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body id="index">
   <div>
-    <img src="/assets/images/icon.svg"></img>
+    <!-- <img src="/assets/images/icon.svg"></img> -->
     <div>
       <h1>GABRIEL <span class="bold">KILLY</span></h1>
       <ul class="sub-header">
@@ -24,16 +24,28 @@
       <a onclick="showAboutModal()">ABOUT ME </a>
     </nav>
     <div class="about-modal">
-      <!-- <img src="/assets/images/modal.svg" /> -->
-      <img  />
+      <!-- <img  /> -->
     </div>
     <div class="modal-helper" onclick="showAboutModal()"></div>
   </div>
   <footer>
-    <div class="links">
-      <a href="https://www.linkedin.com/in/gabrielkilly/" target="_blank"><img src="/assets/images/linkedin-black-logo.png"></img></a>
-      <a href="https://github.com/gabrielkilly" target="_blank"><img src="/assets/images/github-black-logo.png"></img></a>
-    </footer>
-    <script src="/assets/js/main.js"></script>
+    <div class="row">
+      <div>
+        <span class="label">SOCIAL</span>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/gabrielkilly/" target="_blank"><img src="/assets/images/linkedin-black-logo.png"></img></a>
+          <a href="https://github.com/gabrielkilly" target="_blank"><img src="/assets/images/github-black-logo.png"></img></a>
+        </div>
+      </div>
+      <div>
+        <span class="label">PROJECTS</span>
+        <div class="links">
+          <a href="https://www.app.storyspread.com/" target="_blank"><img src="/assets/images/storyspread.svg"></img></a>
+          <a href="http://www.kasai-entertainment.com" target="_blank"><img src="/assets/images/kasai_flame.png"></img></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>

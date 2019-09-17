@@ -1,6 +1,8 @@
 body#index {
   overflow: hidden;
   font-family: 'Khand';
+  color: #e0caca;
+  background-color: black;
   >div {
     > * {
       margin: 30px 0;
@@ -8,13 +10,13 @@ body#index {
         margin: 70px 0;
       }
     }
-    justify-content: space-around;
-    background-color: white;
+    justify-content: center;
+    background-color: #655d6d;;
     position: relative;
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 89.5vh;
+    height: 86vh;
     box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.25);
     z-index: 5;
     >img{
@@ -46,8 +48,8 @@ body#index {
           align-items: center;
         }
         li {
-          font-weight: 300;
-          font-size: 3.5vh;
+          font-weight: 500;
+          font-size: 3vh;
           margin: 10px 0;
         }
         img {
@@ -69,10 +71,10 @@ body#index {
       }
       >a {
 
-        background-color: rgba(#F9D495, 0.6);
+        background-color: rgba(249, 212, 149, 0.32);
         font-weight: 500;
         font-size: 4vh;
-        color: black;
+        color: #e0caca;
         display: block;
         padding: 20px 90px;
         border-radius: 6px;
@@ -85,6 +87,9 @@ body#index {
         cursor: pointer;
         @media screen and (max-width: 550px) {
           padding: 20px 60px;
+        }
+        &:focus {
+          background-color: rgba(249, 212, 149, 0.32);
         }
         &:hover {
           background-color: rgba(#E88016,1);
@@ -106,10 +111,11 @@ body#index {
       background-position: center;
       background-size: contain;
       @media screen and (max-width: 550px) {
-        width: 100%;
-        height: 100vh;
+        width: 98%;
+        height: 110vh;
         background: url(/assets/images/modal-mobile.svg) no-repeat;
         background-position: center;
+        background-size: contain;
 
       }
       // > img {
@@ -128,8 +134,26 @@ body#index {
   footer {
     position: absolute;
     bottom: -0;
-    height: 9vh;
+    height: 14vh;
     background: url(/assets/images/background.png) repeat;
     width: 100%;
+    .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      >div {
+        margin: 0px 20px;
+        text-align: center;
+        span.label {
+          display: block;
+          color: black;
+          font-weight: 600;
+          font-size: 2.6vh;
+          padding-bottom: 1vh;
+          padding-top:1vh;
+        }
+      }
+    }
   }
 }
