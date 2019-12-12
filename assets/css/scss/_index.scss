@@ -21,6 +21,7 @@ body#index {
     z-index: 5;
     @media screen and (max-width: 550px) {
       height: 80vh;
+      height: calc(var(--vh, 1vh) * 80);
     }
     >img{
       height: 10vh;
@@ -136,9 +137,13 @@ body#index {
   footer {
     position: absolute;
     bottom: -0;
-    height: 20vh;
+    height: 14vh;
     background: url(/assets/images/background.png) repeat;
     width: 100%;
+    @media screen and (max-width: 550px) {
+      height: 20vh;
+      height: calc(var(--vh, 1vh) * 20);
+    }
     .row {
       display: flex;
       justify-content: center;
