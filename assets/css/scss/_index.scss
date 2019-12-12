@@ -20,7 +20,7 @@ body#index {
     box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.25);
     z-index: 5;
     @media screen and (max-width: 550px) {
-      height: 75vh;
+      height: 70%;
     }
     >img{
       height: 10vh;
@@ -108,14 +108,12 @@ body#index {
       background-color: white;
       color: black;
       background: rgba(255, 255, 255, 0.99);
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-      border-radius: 10px;
       background: url(/assets/images/modal.svg) no-repeat;
       background-position: center;
       background-size: contain;
       @media screen and (max-width: 550px) {
         width: 98%;
-        height: 110vh;
+        height: 100vh;
         background: url(/assets/images/modal-mobile.svg) no-repeat;
         background-position: center;
         background-size: contain;
