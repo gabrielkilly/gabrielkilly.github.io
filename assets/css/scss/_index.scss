@@ -20,7 +20,7 @@ body#index {
     box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.25);
     z-index: 5;
     @media screen and (max-width: 550px) {
-      height: 70%;
+      height: 80vh;
     }
     >img{
       height: 10vh;
@@ -114,6 +114,7 @@ body#index {
       @media screen and (max-width: 550px) {
         width: 98%;
         height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
         background: url(/assets/images/modal-mobile.svg) no-repeat;
         background-position: center;
         background-size: contain;
@@ -135,17 +136,17 @@ body#index {
   footer {
     position: absolute;
     bottom: -0;
-    height: 90vh;
+    height: 20vh;
     background: url(/assets/images/background.png) repeat;
     width: 100%;
     .row {
       display: flex;
       justify-content: center;
-      align-items: flex-end;
+      align-items: center;
       height: 100%;
       >div {
         margin: 0px 20px;
-        padding-bottom: 20px;
+        //padding-bottom: 20px;
         text-align: center;
         span.label {
           display: block;
