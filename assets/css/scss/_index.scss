@@ -20,7 +20,7 @@ body#index {
     box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.25);
     z-index: 5;
     @media screen and (max-width: 550px) {
-      height: 80vh;
+      height: 75vh;
     }
     >img{
       height: 10vh;
@@ -137,16 +137,17 @@ body#index {
   footer {
     position: absolute;
     bottom: -0;
-    height: 14vh;
+    height: 90vh;
     background: url(/assets/images/background.png) repeat;
     width: 100%;
     .row {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-end;
       height: 100%;
       >div {
         margin: 0px 20px;
+        padding-bottom: 20px;
         text-align: center;
         span.label {
           display: block;
