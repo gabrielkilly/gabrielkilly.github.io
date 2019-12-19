@@ -10,13 +10,17 @@ $(document).ready(function(){
     document.documentElement.style.setProperty('--vh', `${vh}px`);
   });
 
-  $('.about-btn').on('click touchstart', function(evt) {
+  $('.about-btn, .modal-helper').on('click touchstart', function(evt) {
       evt.preventDefault();
-      $(".modal-helper").fadeIn(400);
+      $(".modal-helper").toggle();
   });
-  $('.modal-helper').on('click touchstart', function(evt) {
-      evt.preventDefault();
-      $(".modal-helper").fadeOut(400);
-  });
+  // $('.about-btn').on('click touchstart', function(evt) {
+  //     evt.preventDefault();
+  //     $(".modal-helper").fadeIn(400);
+  // });
+  // $('.modal-helper').on('click touchstart', function(evt) {
+  //     evt.preventDefault();
+  //     $(".modal-helper").fadeOut(400);
+  // });
 
 });
