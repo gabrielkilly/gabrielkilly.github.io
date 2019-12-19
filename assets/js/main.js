@@ -28,5 +28,5 @@ $(document).ready(function(){
 });
 
 $(window).load(function(){
-  $('.loader').hide(1000);
+  // $('.loader').hide(1000);
 });
