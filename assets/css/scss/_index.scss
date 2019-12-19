@@ -117,6 +117,8 @@ body#index {
     background-position: center;
     background-size: contain;
     box-shadow: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
     @media screen and (max-width: 550px) {
       width: 98%;
       background: url(/assets/images/modal-mobile.svg) no-repeat;
