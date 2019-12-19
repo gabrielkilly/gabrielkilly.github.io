@@ -12,8 +12,7 @@ $(document).ready(function(){
 
   $('.about-btn, .modal-helper').on('click touchstart', function(evt) {
       evt.preventDefault();
-      $(".modal-helper").toggle();
-      $('.about-modal').toggle(400);
+      $(".modal-helper").toggle(400);
   });
 
 });
