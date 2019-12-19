@@ -16,11 +16,11 @@ $(document).ready(function(){
   // });
   $('.about-btn').on('click touchstart', function(evt) {
       evt.preventDefault();
-      $(".modal-helper").css("opacity", "1").toggle();
+      $(".modal-helper").css("opacity", "1").css("visibility", "visible");
   });
   $('.modal-helper').on('click touchstart', function(evt) {
       evt.preventDefault();
-      $(".modal-helper").css("opacity", "0").toggle();
+      $(".modal-helper").css("opacity", "0").css("visibility", "hidden");
   });
 
 });
