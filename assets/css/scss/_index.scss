@@ -157,3 +157,7 @@ body#index {
     }
   }
 }
+body:after{
+    display:none;
+    content: url(/assets/images/modal.svg) url(/assets/images/modal-mobile.svg);
+}
